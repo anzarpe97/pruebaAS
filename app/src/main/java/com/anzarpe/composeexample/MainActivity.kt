@@ -36,10 +36,6 @@ class MainActivity : ComponentActivity() {
 
         Column {
             Text(text = "Hola")
-            Text(text = "Mi")
-            Text(text = "Amigo")
-            Text(text = "Como")
-            Text(text = "Estas")
 
         }
 
