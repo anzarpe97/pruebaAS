@@ -3,6 +3,7 @@ package com.anzarpe.composeexample
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
@@ -17,27 +18,33 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Row(){
+            Row() {
                 Text(text = "Holanda")
 
             }
 
-                app()
-
-            }
-
-
+            app()
 
         }
 
-    @Preview (showBackground = true)
+
+    }
+
+    @Preview(showBackground = true)
     @Composable
-    fun app(){
+    fun app() {
 
-        Text(text = "Hola")
+        Column {
+            Text(text = "Hola")
+            Text(text = "Mi")
+            Text(text = "Amigo")
+            Text(text = "Como")
+            Text(text = "Estas")
+
+        }
 
     }
 
-    }
+}
 
 
